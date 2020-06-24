@@ -1,13 +1,8 @@
 dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
 
 def roll_call_dwarves(array)# code an argument here
-  i = 0
-  while i < array.length
-   if yield(array[i])
-       return array[i]
-     end
-    i = i + 1
-  end# Your code here
+  dwarves.each_with_index {|dwarf, index|
+    puts "#{index +1}. #{dwarf}"}# Your code here
 end
 
 
