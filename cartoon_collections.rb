@@ -11,10 +11,9 @@ end
 
 
 def summon_captain_planet(planeteer_calls)# code an argument here
-  i = 0
-  while i < planeteer_calls.length
-    puts i.collect {|planeteer_calls| planeteer_calls + "!"}
-     i += 1# Your code here
+  planeteer_calls.collect do |call|
+    call.capitalize << "!"
+  end# Your code here
 end
 
 def long_planeteer_calls# code an argument here
