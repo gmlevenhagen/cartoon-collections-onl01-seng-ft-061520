@@ -3,7 +3,9 @@ dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
 def roll_call_dwarves(dwarves)# code an argument here
   i = 0
   while i < dwarves.length
-    return dwarves[i] if yield(dwarves[i])
+   if yield(dwarves[i])
+       return dwarves[i]
+     end
     i = i + 1
   end# Your code here
 end
