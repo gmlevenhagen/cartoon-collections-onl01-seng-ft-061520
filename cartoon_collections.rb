@@ -1,7 +1,9 @@
-def roll_call_dwarves(array)# code an argument here
+dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
+
+def roll_call_dwarves(dwarves)# code an argument here
   i = 0
-  while i < array.length
-    return array[i] if yield(array[i])
+  while i < dwarves.length
+    return dwarves[i] if yield(dwarves[i])
     i = i + 1
   end# Your code here
 end
