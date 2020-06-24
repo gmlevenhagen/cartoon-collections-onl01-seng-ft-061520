@@ -6,7 +6,7 @@ def roll_call_dwarves(array)# code an argument here
   end
 end
 
-roll_call_dwarves(dwarves)# Your code here
+# Your code here
 
 
 
